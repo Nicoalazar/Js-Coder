@@ -18,16 +18,16 @@ if (numero % 2 == 0) {
 Actividad 02:
 Crea un algoritmo que le pida al usuario un número y luego utiliza while para evaluar
 cuántos números son pares y cuantos impares, hasta que el usuario ingrese "salir".*/
-let numero1 = prompt('INGRESE UN NUMERO PARA EVALUAR O INGRESE "SALIR" PARA SALIR');
+let numero1 = prompt('INGRESE UN NUMERO PARA EVALUAR O INGRESE "SALIR" PARA SALIR').toLocaleLowerCase();
 let par = 0;
 let impar = 0;
-while (numero1 != 'salir' && numero1 != 'SALIR') {
+while (numero1 != 'salir') {
     if (numero1 % 2 == 0) {
         par++;
     }else {
         impar++;
     }
-    numero1 = prompt('INGRESE UN NUMERO PARA EVALUAR O INGRESE "SALIR" PARA SALIR');
+    numero1 = prompt('INGRESE UN NUMERO PARA EVALUAR O INGRESE "SALIR" PARA SALIR').toLocaleLowerCase();
 }
 console.log('La cantidad de pares es ' + par);
 console.log('La cantidad de impares es ' + impar);
