@@ -52,3 +52,4 @@ if (index > 3) {
 }
 alert(`lado ${index+1}`);
 }
+//No le salió ni al profesor, una verga
